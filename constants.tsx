@@ -1,6 +1,10 @@
 import React from 'react';
 import { Brand } from './types';
 
+import bets10Logo from './assets/logos/b10.png';
+import discountCasinoLogo from './assets/logos/dc.png';
+import jetbahisLogo from './assets/logos/jb.png';
+
 const CompetitorLogo1 = () => (
   <svg viewBox="0 0 100 100" className="h-16 w-16 text-red-500">
     <path fill="currentColor" d="M50 0L61.8 38.2H100L69.1 61.8L80.9 100L50 76.4L19.1 100L30.9 61.8L0 38.2H38.2L50 0Z" />
@@ -15,28 +19,6 @@ const CompetitorLogo2 = () => (
         <text x="50" y="58" textAnchor="middle" fontSize="30" fill="white" fontWeight="bold">JC</text>
     </svg>
 );
-
-const JetbahisLogo = () => (
-    <svg viewBox="0 0 100 100" className="h-16 w-16 text-cyan-400">
-        <circle cx="50" cy="50" r="45" fill="currentColor" />
-        <text x="50" y="65" textAnchor="middle" fontSize="45" fill="#083344" fontWeight="bold" fontFamily="sans-serif">JB</text>
-    </svg>
-);
-
-const DiscountCasinoLogo = () => (
-    <svg viewBox="0 0 100 100" className="h-16 w-16 text-amber-400">
-        <path fill="currentColor" d="M10 10 H90 V50 L50 90 L10 50 Z" />
-        <text x="50" y="48" textAnchor="middle" fontSize="35" fill="#422006" fontWeight="bold" fontFamily="sans-serif">DC</text>
-    </svg>
-);
-
-const Bets10Logo = () => (
-    <svg viewBox="0 0 100 100" className="h-16 w-16 text-emerald-400">
-        <rect width="90" height="90" x="5" y="5" rx="15" fill="currentColor" />
-        <text x="50" y="68" textAnchor="middle" fontSize="40" fill="#022c22" fontWeight="bold" fontFamily="sans-serif">B10</text>
-    </svg>
-);
-
 
 export const BRANDS: Brand[] = [
   {
@@ -70,42 +52,42 @@ export const BRANDS: Brand[] = [
   {
     id: 3,
     name: 'Jetbahis',
-    logo: <JetbahisLogo />,
+    logo: <img src={jetbahisLogo} alt="Jetbahis Logo" className="h-20 w-20" />,
     welcomeOffer: {
-      title: '200% Welcome Package',
-      details: 'Up to $500 + 100 Free Spins',
+      title: '300% Deposit Bonus on Your First Deposit',
+      details: 'Upto 1000 TL',
     },
     rating: 4.9,
     features: ['Exclusive VIP Program', 'Instant Withdrawals', 'Daily Promotions', '24/7 Live Support'],
-    ctaLink: '#',
+    ctaLink: 'https://jetbahis776.com/tr/kampanyalar/cifte-bonus-ve-yuzde-500-jet-kupon',
     isOwnBrand: true,
     highlightColor: 'cyan',
   },
   {
     id: 4,
     name: 'Discount Casino',
-    logo: <DiscountCasinoLogo />,
+    logo: <img src={discountCasinoLogo} alt="Discount Casino Logo" className="h-20 w-20" />,
     welcomeOffer: {
-      title: '300 No-Wager Spins',
-      details: 'On your first $50 deposit',
+      title: '100% cashback upon first Deposit',
+      details: 'Upto 5000 TL',
     },
     rating: 4.8,
-    features: ['No Wagering Requirements', 'Fast Payouts', 'Mobile First Design', '24/7 Live Support'],
-    ctaLink: '#',
+    features: ['No Wagering Requirements', 'Fast Payouts', 'Something Random', '24/7 Live Support'],
+    ctaLink: 'https://discountcasino723.com/tr/kampanyalar/yeni-uyelere-ozel-nakit-odemeler',
     isOwnBrand: true,
     highlightColor: 'amber',
   },
   {
     id: 5,
     name: 'Bets10',
-    logo: <Bets10Logo />,
+    logo: <img src={bets10Logo} alt="Bets10 Logo" className="h-20 w-20" />,
     welcomeOffer: {
-      title: '$1000 Bonus + 150 Spins',
-      details: 'Spread across first 3 deposits',
+      title: '%200 Bonus + 50 Free Spins',
+      details: 'Up to 1000 TL. If you deposit 1000 TL or more, 50 Free Spins Extra',
     },
     rating: 4.7,
     features: ['Huge Game Library', 'Crypto Accepted', 'Loyalty Rewards', '24/7 Live Support'],
-    ctaLink: '#',
+    ctaLink: 'https://bonus.1385bets10.com/tr/ilk-para-yatirma-bonusu/',
     isOwnBrand: true,
     highlightColor: 'emerald',
   },

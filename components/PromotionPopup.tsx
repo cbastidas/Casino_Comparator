@@ -43,11 +43,11 @@ export const PromotionPopup: React.FC<PromotionPopupProps> = ({ onClose }) => {
           
           <div className="my-6">
              <a
-                href="#"
-                onClick={(e) => {
-                    e.preventDefault();
-                    onClose();
-                }}
+                href="https://bonus.1385bets10.com/"
+               // onClick={(e) => {
+               //     e.preventDefault();
+               //     onClose();
+               // }}
                 className="w-full inline-block text-center rounded-lg px-6 py-4 text-xl font-bold text-slate-900 bg-gradient-to-r from-amber-400 to-yellow-500 shadow-lg transition-transform duration-200 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-amber-300/50"
               >
                 Claim Now!

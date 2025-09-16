@@ -15,7 +15,7 @@ export const Header: React.FC = () => {
         <div className="flex items-center justify-center space-x-3">
             <DiamondIcon />
             <h1 className="text-2xl md:text-3xl font-bold text-slate-100 tracking-tight">
-            Casino Welcome Offers
+            Welcome Offers Comparator
             </h1>
         </div>
       </div>
